@@ -9,10 +9,7 @@ let number = 0;
 
 const summary = () => {
   number++;
-  pSpendTime.textContent = number + " seconds";
-  if (number < 10) {
-    pSpendTime.textContent = ` 0${number} seconds`;
-  }
+  pSpendTime.textContent = number.toString().padStart(2, 0) + " seconds";
 }
 
 const counter = () => {
@@ -21,19 +18,19 @@ const counter = () => {
   i = pTimes.length - 1;
 
   let seconds = Math.floor((time / 1000) % 60);
-  seconds < 10 ? pTimes[i].textContent = "0" + seconds : pTimes[i].textContent = seconds;
+  pTimes[i].textContent = seconds.toString().padStart(2, 0);
   i--;
 
   let minutes = Math.floor((time / (1000 * 60)) % 60);
-  minutes < 10 ? pTimes[i].textContent = "0" + minutes : pTimes[i].textContent = minutes;
+  pTimes[i].textContent = minutes.toString().padStart(2, 0);
   i--;
 
   let hours = Math.floor((time / (1000 * 60 * 60)) % 24);
-  hours < 10 ? pTimes[i].textContent = "0" + hours : pTimes[i].textContent = hours;
+  pTimes[i].textContent = hours.toString().padStart(2, 0);
   i--;
 
   let days = Math.floor((time / (1000 * 60 * 60 * 24)));
-  days < 10 ? pTimes[i].textContent = "0" + days : pTimes[i].textContent = days;
+  pTimes[i].textContent = days.toString().padStart(2, 0);
   i--;
 
   summary();
