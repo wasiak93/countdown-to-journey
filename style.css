@@ -4,11 +4,15 @@
 }
 
 body {
-  position: relative;
   font-family: monospace;
+  background-image: url(iceland.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-div.background {
+
+/* div.background {
   width: 100vw;
   height: 100vh;
   background-image: url(iceland.jpg);
@@ -89,4 +93,64 @@ p.text {
 
 .summary p {
   display: inline-block;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+h1 {
+  flex-basis: 30vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+}
+
+/* koniec h1, teraz timer */
+
+div.timer {
+  /* jak element: */
+  /* flex-grow: 1; */
+  flex-basis: 50%;
+  margin-bottom: 50px;
+  /* jako kontener: */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: space-around;
+  /* border: solid 3px white; */
+  width: 80vw;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+}
+
+/* TUTAJ SKONCZYLEM TRZEBA USTAWIC W TIMER.DIV FLEXA I MOZNA ZWIEKSZAC ROZDZEILCZOSC */
+
+.timer div {
+  /* background-color: red; */
+  border: 3px solid purple;
+  flex-basis: 48%;
+}
+
+/* stopka */
+.summary {
+  padding: 10px 0;
+}
+
+.summary p {
+  display: inline;
+  color: white;
+  font-size: 17px;
+}
+
+.summary .informTwo {
+  display: none;
+  /* dla wiekszych rozdzielczosci zmienic display */
 }
