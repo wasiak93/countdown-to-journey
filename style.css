@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  color: white;
 }
 
 
@@ -98,7 +99,7 @@ p.text {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 100vh;
   width: 80vw;
@@ -106,10 +107,9 @@ p.text {
 }
 
 h1 {
-  flex-basis: 30vh;
+  flex-basis: 20vh;
   display: flex;
-  align-items: center;
-  color: white;
+  align-items: flex-end;
   font-size: 40px;
 }
 
@@ -119,35 +119,65 @@ div.timer {
   /* jak element: */
   /* flex-grow: 1; */
   flex-basis: 50%;
-  margin-bottom: 50px;
+  /* margin-bottom: 0px; */
   /* jako kontener: */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: space-around;
+  /* align-items: space-around; */
+  align-content: space-around;
   /* border: solid 3px white; */
   width: 80vw;
   background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  /* text-transform: uppercase; */
 }
-
-/* TUTAJ SKONCZYLEM TRZEBA USTAWIC W TIMER.DIV FLEXA I MOZNA ZWIEKSZAC ROZDZEILCZOSC */
 
 .timer div {
   /* background-color: red; */
-  border: 3px solid purple;
+  /* border: 3px solid purple; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
   flex-basis: 48%;
+  height: 48%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.timer .time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  flex-basis: 51%;
+  height: 80%;
+  /* background-color: red; */
+}
+
+.timer .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 51%;
+  height: 20%;
+  font-size: 20px;
 }
 
 /* stopka */
 .summary {
+  display: flex;
+  justify-content: center;
   padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100vw;
 }
 
 .summary p {
-  display: inline;
-  color: white;
   font-size: 17px;
+  margin-right: 7px;
+
+
 }
 
 .summary .informTwo {
