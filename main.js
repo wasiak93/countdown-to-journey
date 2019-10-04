@@ -1,5 +1,5 @@
 const pTimes = [...document.querySelectorAll('p.time')]
-const endDate = new Date('2019-10-16 21:15:00').getTime();
+const endDate = new Date('2019-10-16T21:15:00').getTime();
 
 const pSpendTime = document.querySelector('.spendTime');
 
