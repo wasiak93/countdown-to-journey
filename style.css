@@ -16,14 +16,8 @@ body {
   color: white;
 }
 
-.video-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  overflow: hidden;
+video {
+  display: none;
 }
 
 
@@ -126,6 +120,25 @@ div.timer {
 }
 
 @media (min-width:840px) {
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  video {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+  }
+
   div.timer {
     flex-wrap: nowrap;
     align-items: center;
@@ -182,5 +195,12 @@ div.timer {
 
   .summary p {
     font-size: 22px;
+  }
+}
+
+
+@media (min-width: 1520px) {
+  body {
+    background: black;
   }
 }
