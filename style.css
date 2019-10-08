@@ -57,7 +57,7 @@ div.timer {
   justify-content: center;
   flex-basis: 48%;
   height: 48%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(104, 91, 91, 0.1);
 }
 
 .timer .time {
@@ -120,6 +120,10 @@ div.timer {
 }
 
 @media (min-width:840px) {
+  body {
+    background: url();
+  }
+
   .video-container {
     position: fixed;
     top: 0;
@@ -131,13 +135,14 @@ div.timer {
   }
 
   video {
-    display: block;
+    display: inline-block;
     position: absolute;
     top: 0;
-    left: -100%;
-    width: 300%;
+    left: -50%;
+    width: 200%;
     height: 100%;
   }
+
 
   div.timer {
     flex-wrap: nowrap;
@@ -173,6 +178,7 @@ div.timer {
 }
 
 @media (min-width: 1024px) {
+
   h1 {
     font-size: 100px;
     flex-basis: 30vh;
@@ -198,9 +204,11 @@ div.timer {
   }
 }
 
-
-@media (min-width: 1520px) {
-  body {
-    background: black;
+@media(min-width: 1520px) {
+  video {
+    height: 300%;
+    top: -100%;
+    width: 100%;
+    left: 0;
   }
 }
