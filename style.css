@@ -138,7 +138,7 @@ div.timer {
     display: inline-block;
     position: absolute;
     top: -40%;
-    left: -50%;
+    left: 0;
     /* width: 200%; */
     height: 150%;
   }
@@ -206,11 +206,11 @@ div.timer {
 
 
 
-@media(min-width: 1520px) {
+/* @media(min-width: 1520px) {
   video {
     height: 150%;
     top: -50%;
-    /* width: 100%; */
+    width: 100%;
     left: 0;
   }
-}
+} */
