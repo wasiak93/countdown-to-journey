@@ -1,6 +1,6 @@
 const video = document.querySelector("video");
 const pTimes = [...document.querySelectorAll("p.time")];
-const endDate = new Date("2020-01-15T21:15:00").getTime();
+const endDate = new Date("2020-04-15T21:15:00").getTime();
 
 const pSpendTime = document.querySelector(".spendTime");
 
@@ -8,7 +8,7 @@ let number = 0;
 
 video.playbackRate = 0.3;
 
-// tablica dlatego, że jak będe chciał dodać miesiać/rok/setne sekundy to tylko dodaje w html diva oraz w counter zmienną,warunek,dekrementację i gotowe
+
 
 const summary = () => {
   number++;
